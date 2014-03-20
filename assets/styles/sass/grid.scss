@@ -1,0 +1,266 @@
+/* 12 column fluid grid */
+.row {
+    clear:both;
+    margin:0 auto;
+    width:100%;
+}
+.col {
+    float:left;
+    margin-left:2.127659574468%;
+    min-height:1px;
+    position:relative;
+}
+
+/* Fluid columns */
+.col {
+
+    &:first-child {
+        margin-left:0;
+    }
+    &.one {
+        width:6.382978723404%;
+    }
+    &.two {
+        width:14.893617021277%;
+    }
+    &.three {
+        width:23.404255319149%;
+    }
+    &.four {
+        width:31.914893617021%;
+    }
+    &.five {
+        width:40.425531914894%;
+    }
+    &.six {
+        width:48.936170212766%;
+    }
+    &.seven {
+        width:57.446808510638%;
+    }
+    &.eight {
+        width:65.957446808511%;
+    }
+    &.nine {
+        width:74.468085106383%;
+    }
+    &.ten {
+        width:82.978723404255%;
+    }
+    &.eleven {
+        width:91.489361702128%;
+    }
+    &.twelve {
+        margin-left:0; width:100%;
+    }
+    &.offset-1 {
+        margin-left:8.510638297872%;
+    }
+    &.offset-2 {
+        margin-left:17.021276595745%;
+    }
+    &.offset-3 {
+        margin-left:25.531914893617%;
+    }
+    &.offset-4 {
+        margin-left:34.042553191489%;
+    }
+    &.offset-5 {
+        margin-left:42.553191489362%;
+    }
+    &.offset-6 {
+        margin-left:51.063829787234%;
+    }
+    &.offset-7 {
+        margin-left:59.574468085106%;
+    }
+    &.offset-8 {
+        margin-left:68.085106382979%;
+    }
+    &.offset-9 {
+        margin-left:76.595744680851%;
+    }
+    &.offset-10 {
+        margin-left:85.106382978723%;
+    }
+    &.offset-11 {
+        margin-left:93.617021276596%;
+    }
+    
+    + .col {
+
+        &.offset-1 {
+            margin-left:10.63829787234%;
+        }
+        &.offset-2 {
+            margin-left:19.148936170213%;
+        }
+        &.offset-3 {
+            margin-left:27.659574468085%;
+        }
+        &.offset-4 {
+            margin-left:36.170212765957%;
+        }
+        &.offset-5 {
+            margin-left:44.68085106383%;
+        }
+        &.offset-6 {
+            margin-left:53.191489361702%;
+        }
+        &.offset-7 {
+            margin-left:61.702127659574%;
+        }
+        &.offset-8 {
+            margin-left:70.212765957447%;
+        }
+        &.offset-9 {
+            margin-left:78.723404255319%;
+        }
+        &.offset-10 {
+            margin-left:87.234042553191%;
+        }
+    }
+}
+
+/* Alternative fluid columns */
+.tenth, 
+.quarter, 
+.third, 
+.half, 
+.three-fourths {
+    margin-left:0;
+}
+.tenth { width:10%; }
+.quarter { width:25%; }
+.third { width:33.333333333333%; }
+.half { width:50%; margin-left:0; }
+.three-fourths { width:75%; }
+
+/* Fixed columns */
+.fixed {
+    width:940px;
+    
+    .col {
+        margin-left:20px;
+
+        &:first-child {
+            margin-left:0;
+        }
+        &.one {
+            width:60px;
+        }
+        &.two {
+            width:140px;
+        }
+        &.three {
+            width:220px;
+        }
+        &.four {
+            width:300px;
+        }
+        &.five {
+            width:380px;
+        }
+        &.six {
+            width:460px;
+        }
+        &.seven {
+            width:540px;
+        }
+        &.eight {
+            width:620px;
+        }
+        &.nine {
+            width:700px;
+        }
+        &.ten {
+            width:780px;
+        }
+        .eleven {
+            width:860px;
+        }
+        &.twelve {
+            margin-left:0;
+            width:940px;
+        }
+        &.offset-1 {
+            margin-left:80px;
+        }
+        &.offset-2 {
+            margin-left:160px;
+        }
+        &.offset-3 {
+            margin-left:240px;
+        }
+        &.offset-4 {
+            margin-left:320px;
+        }
+        &.offset-5 {
+            margin-left:400px;
+        }
+        &.offset-6 {
+            margin-left:480px;
+        }
+        &.offset-7 {
+            margin-left:560px;
+        }
+        &.offset-8 {
+            margin-left:640px;
+        }
+        &.offset-9 {
+            margin-left:720px;
+        }
+        &.offset-10 {
+            margin-left:800px;
+        }
+        &.offset-11 {
+            margin-left:880px;
+        }
+        + .col {
+            
+            &.offset-1 {
+                margin-left:100px;
+            }
+            &.offset-2 {
+                margin-left:180px;
+            }
+            &.offset-3 {
+                margin-left:260px;
+            }
+            &.offset-4 {
+                margin-left:340px;
+            }
+            &.offset-5 {
+                margin-left:420px;
+            }
+            &.offset-6 {
+                margin-left:500px;
+            }
+            &.offset-7 {
+                margin-left:580px;
+            }
+            &.offset-8 {
+                margin-left:660px;
+            }
+            &.offset-9 {
+                margin-left:740px;
+            }
+            &.offset-10 {
+                margin-left:820px;
+            }
+            &.offset-11 {
+                margin-left:900px;
+            }
+        }    
+    }
+}
+
+/* Clear floats */
+.row:after { 
+    clear:both;
+    content:" ";
+    display:block;
+    font-size:0;
+    height:0;
+    visibility:hidden;
+}
