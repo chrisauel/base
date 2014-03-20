@@ -118,4 +118,11 @@
 .fixed .col+.col.offset-11 {margin-left:900px;}
 
 /* clear floats */
-.row:after {clear:both;content:".";display:block;height:0;visibility:hidden;}
+.row:after { 
+    clear:both;
+    content:" ";
+    display:block;
+    font-size:0;
+    height:0;
+    visibility:hidden;
+}
